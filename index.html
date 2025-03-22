@@ -12,6 +12,7 @@
         <div class="container">
             <div class="side-image">
                 <div class="icon">
+                    <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" alt="LOGO">
                     <p>ODIN</p>
                 </div>
             </div>
@@ -22,16 +23,22 @@
                        <fieldset>
                            <legend>Let's do this!</legend>
                            <section>
-                               <input type="text" id="firstname" placeholder="FIRST NAME" required>
-                               <input type="text" id="lastname" placeholder="LAST NAME" required>
+                               <input maxlength="32" type="text" id="firstname" placeholder="FIRST NAME" required>
+                               <input maxlength="32" type="text" id="lastname" placeholder="LAST NAME" required>
                            </section>
                            <section>
-                               <input type="email" name="email" id="email" placeholder="EMAIL" required>
-                               <input type="tel" name="phone" id="phone" placeholder="PHONE NUMBER" required>
+                               <input maxlength="32" type="email" name="email" id="email" placeholder="EMAIL" required>
+                               <input maxlength="16" type="tel" name="phone" id="phone" placeholder="PHONE NUMBER" required>
                            </section>
                            <section>
-                               <input type="password" name="password" id="password" minlength="8" placeholder="PASSWORD" required>
-                               <input type="password" name="confirmPassword" id="confirmPassword" minlength="8" placeholder="CONFIRM PASSWORD" required>
+                               <div class="pwd">
+                                   <input maxlength="16" type="password" name="password" id="password" minlength="8" placeholder="PASSWORD" required>
+                                   <img src="resources/eye-close.png" class="eye-icon iconOne">
+                               </div>
+                               <div class="pwd second">
+                                   <input maxlength="16" type="password" name="confirmPassword" id="confirmPassword" minlength="8" placeholder="CONFIRM PASSWORD" required>
+                                   <img src="resources/eye-close.png" class="eye-icon iconTwo">
+                                </div>
                            </section>
                        </fieldset>
                    </div>
